@@ -37,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
         barChange = new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                switch (seekBar.getId()) {
+                    case R.id.barraVolumen:
+                        break;
+                    case R.id.barraBalance:
+                        break;
+                    case R.id.barraFrecuencia:snd.ajustaFrecuencia((float) i / 100.0f);
+                        break;
+                }
 
             }
 
@@ -47,10 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                switch (seekBar.getId()) {
-                    case R.id.barraVolumen:
-                        break;
-                }
+
             }
         };
         SeekBar sbVolumen = (SeekBar) findViewById(R.id.barraVolumen);
