@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iesvirgendelcarmen.dam.sonido.MainActivity">
+
+    <TextView
+        android:fontFamily="casual"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="SONIDOS"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+
+    <LinearLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <Button
+        android:id="@+id/botonLaser"
+        android:fontFamily="casual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LASER"
+        android:onClick="pulsado">
+    </Button>
+
+    <Button
+        android:id="@+id/botonBomba"
+        android:fontFamily="casual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOMBA"
+        android:onClick="pulsado">
+    </Button>
+
+            </LinearLayout>
+        <LinearLayout
+            android:fontFamily="casual"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <Button
+        android:id="@+id/botonDisparo"
+        android:fontFamily="casual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DISPARO"
+        android:onClick="pulsado">
+    </Button>
+
+    <Button
+        android:id="@+id/botonMaullido"
+        android:fontFamily="casual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAULLIDO"
+        android:onClick="pulsado">
+    </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:fontFamily="casual"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="VOLUMEN"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+
+    <SeekBar
+        android:id="@+id/barraVolumen"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:max="100"/>
+
+    <TextView
+        android:fontFamily="casual"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="BALANCE"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+
+    <SeekBar
+        android:id="@+id/barraBalance"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:max="100"/>
+
+    <TextView
+        android:fontFamily="casual"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="FRECUENCIA"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        />
+
+    <SeekBar
+        android:id="@+id/barraFrecuencia"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:max="100" />
+
+</LinearLayout>
