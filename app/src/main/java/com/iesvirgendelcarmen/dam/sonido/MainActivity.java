@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         balance = (SeekBar) findViewById(R.id.barraBalance);
         frecuencia = (SeekBar) findViewById(R.id.barraFrecuencia);
 
-        GestorSonido snd = new GestorSonido(getApplicationContext());
+        snd = new GestorSonido(getApplicationContext());
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
         //CONFIGURACION SEEKBAR
@@ -73,10 +73,13 @@ public class MainActivity extends AppCompatActivity {
         int id = view.getId();
 
         switch (id) {
-            case R.id.botonBomba:snd.suena(laser);
+            case R.id.botonBomba:snd.suena(explosion);
+                break;
             case R.id.botonDisparo:snd.suena(disparo);
+                break;
             case R.id.botonMaullido:snd.suena(gato);
-            case R.id.botonLaser:snd.suena(explosion);
+                break;
+            case R.id.botonLaser:snd.suena(laser);
            break;}
     }
 }

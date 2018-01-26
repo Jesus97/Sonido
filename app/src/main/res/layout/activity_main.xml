@@ -90,7 +90,8 @@
         android:id="@+id/barraVolumen"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:max="100"/>
+        android:max="100"
+        android:progress="50"/>
 
     <TextView
         android:fontFamily="casual"
@@ -107,7 +108,8 @@
         android:id="@+id/barraBalance"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:max="100"/>
+        android:max="100"
+        android:progress="50"/>
 
     <TextView
         android:fontFamily="casual"
@@ -124,6 +126,7 @@
         android:id="@+id/barraFrecuencia"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:max="100" />
+        android:max="100"
+        android:progress="50"/>
 
 </LinearLayout>
