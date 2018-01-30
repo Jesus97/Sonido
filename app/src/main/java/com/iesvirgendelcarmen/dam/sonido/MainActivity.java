@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
         barChange = new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+            public void onProgressChanged(SeekBar seekBar, int progreso, boolean b) {
                 switch (seekBar.getId()) {
-                    case R.id.barraVolumen:
+                    case R.id.barraVolumen:snd.ajustaVolumen((float) progreso / 100.f);
                         break;
-                    case R.id.barraBalance:
+                    case R.id.barraBalance:snd.ajustaBalance((float) progreso /100.f);
                         break;
-                    case R.id.barraFrecuencia:snd.ajustaFrecuencia((float) i / 100.0f);
+                    case R.id.barraFrecuencia:snd.ajustaFrecuencia((float) progreso / 100.0f);
                         break;
                 }
 
